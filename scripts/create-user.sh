@@ -10,7 +10,7 @@ if id $NEW_USER >/dev/null 2>&1; then
         echo "User already exists."
 else
 	echo "Creating new user $NEW_USER..."
-	# sudo useradd -m $NEW_USER
+	sudo useradd -m $NEW_USER
 fi
 
 # Groups to add new user to.
